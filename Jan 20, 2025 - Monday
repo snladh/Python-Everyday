@@ -1,0 +1,42 @@
+%md
+### Question 1: Check if a Number is Prime
+Write a Python function is_prime(n) that checks if a given number n is a prime number. Return True if it is prime, otherwise return False.
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+
+    i = 3
+    while i <= n ** 0.5:
+        if n % i == 0:
+            return False
+        i += 2
+
+    return True 
+
+
+
+%md
+
+### Question 2: Count Vowels in a String
+Write a function count_vowels(s) that takes a string s as input and returns the count of vowels (a, e, i, o, u, both uppercase and lowercase) in the string.
+
+def count_vowels(s):
+    vowels = ["a","e","i","o","u"]
+    count = 0
+    for i in s.lower():
+        if i in vowels:
+            count += 1
+    return count
+
+
+
+
+%md
+
+### Question 3: Find the Second Largest Number
+Write a function second_largest(nums) that takes a list of integers nums and returns the second largest number in the list. If the list has fewer than 2 unique numbers, return None.
