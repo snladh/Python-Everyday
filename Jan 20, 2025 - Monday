@@ -40,3 +40,14 @@ def count_vowels(s):
 
 ### Question 3: Find the Second Largest Number
 Write a function second_largest(nums) that takes a list of integers nums and returns the second largest number in the list. If the list has fewer than 2 unique numbers, return None.
+
+def second_largest(nums):
+    if len(nums) < 2:
+        return None
+    
+    unique_nums = list(set(nums))
+    if len(unique_nums) < 2:
+        return None
+    
+    unique_nums.sort(reverse=True)
+    return unique_nums[1]
