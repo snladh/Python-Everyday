@@ -29,3 +29,4 @@ def find_duplicates(nums):
 Write a function fibonacci(n) that generates the first n numbers in the Fibonacci sequence. Return the sequence as a list.
 
 
+
