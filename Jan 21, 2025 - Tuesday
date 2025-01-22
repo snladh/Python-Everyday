@@ -1,0 +1,21 @@
+Question 1: Reverse Words in a String
+Write a function reverse_words(s) that takes a string s as input and returns the string with the order of words reversed. Words are separated by spaces.
+
+def reverse_words(s):
+    splitted = s.split(" ")
+    reversed = splitted[::-1]
+    return " ".join(reversed)
+# join function works only for the string.
+
+
+
+Question 2: Find All Duplicates in a List
+Write a function find_duplicates(nums) that takes a list of integers nums and returns a list of all duplicate numbers. Ensure each duplicate appears only once in the result.
+
+
+
+
+
+%md
+### Question 3: Fibonacci Sequence
+Write a function fibonacci(n) that generates the first n numbers in the Fibonacci sequence. Return the sequence as a list.
