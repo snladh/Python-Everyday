@@ -12,10 +12,19 @@ def reverse_words(s):
 Question 2: Find All Duplicates in a List
 Write a function find_duplicates(nums) that takes a list of integers nums and returns a list of all duplicate numbers. Ensure each duplicate appears only once in the result.
 
-
+def find_duplicates(nums):
+    unique = set()
+    dup_list = set()
+    for i in nums:
+        if i in unique:
+            dup_list.add(i)
+        else:
+            unique.add(i)
+    return list(dup_list)
 
 
 
 %md
 ### Question 3: Fibonacci Sequence
 Write a function fibonacci(n) that generates the first n numbers in the Fibonacci sequence. Return the sequence as a list.
+
