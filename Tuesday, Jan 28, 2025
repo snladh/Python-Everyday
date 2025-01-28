@@ -1,0 +1,17 @@
+Question 1: Check for Palindrome
+Write a function is_palindrome(s) that takes a string s and returns True if the string is a palindrome (reads the same forward and backward), ignoring case and non-alphanumeric characters, and False otherwise.
+
+def is_palindrome(s):
+    cleaned_str = ""
+    if s.isalnum():
+        cleaned_str += s.lower()
+    return cleaned_str == cleaned_str[::-1]
+
+Question 2: Find the Intersection of Two Lists
+Write a function list_intersection(list1, list2) that takes two lists of integers as input and returns a new list containing elements that are present in both lists. Ensure there are no duplicates in the output.
+
+
+
+Question 3: Sort a Dictionary by Value
+Write a function sort_dict_by_value(d) that takes a dictionary d as input and returns a new dictionary sorted by its values in ascending order. The keys should remain paired with their corresponding values.
+
