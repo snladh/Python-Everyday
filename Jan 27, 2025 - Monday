@@ -1,0 +1,29 @@
+Question 1: Factorial of a Number
+Write a function factorial(n) that takes an integer n and returns the factorial of n (denoted as 𝑛 ! n!). The factorial of a non-negative number 𝑛 n is the product of all positive integers less than or equal to 𝑛 n.
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    product = n
+    while n != 1:
+        product *= (n-1)
+        n -= 1
+    return product
+
+Question 2: Remove Duplicates From a List
+Write a function remove_duplicates(nums) that takes a list of integers and returns a new list with duplicate elements removed, preserving the order of their first occurrence.
+
+def remove_duplicates(nums):
+    unique = []
+    seen = set()
+    for a in nums:
+        if a not in seen:
+            unique.append(a)
+            seen.add(a)
+    return unique
+
+
+
+Question 3: Find the Longest Word in a Sentence
+Write a function longest_word(sentence) that takes a string sentence and returns the longest word in the sentence. If there are multiple words with the same length, return the first one.
+
