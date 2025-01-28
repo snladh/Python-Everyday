@@ -10,6 +10,8 @@ def factorial(n):
         n -= 1
     return product
 
+
+
 Question 2: Remove Duplicates From a List
 Write a function remove_duplicates(nums) that takes a list of integers and returns a new list with duplicate elements removed, preserving the order of their first occurrence.
 
@@ -27,3 +29,13 @@ def remove_duplicates(nums):
 Question 3: Find the Longest Word in a Sentence
 Write a function longest_word(sentence) that takes a string sentence and returns the longest word in the sentence. If there are multiple words with the same length, return the first one.
 
+
+def longest_word(sentence):
+    splitted = sentence.split(" ")
+    length = 0
+    word = ""
+    for a in splitted:
+        if len(a) > length:
+            length = len(a)
+            word = a
+    return word
