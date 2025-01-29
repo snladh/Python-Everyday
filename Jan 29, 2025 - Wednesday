@@ -18,3 +18,8 @@ def are_anagrams(str1, str2):
 Problem 3: First Non-Repeating Character
 Given a string, find the first non-repeating character and return it. If all characters are repeating, return None.
 
+def first_non_repeating_char(s):
+    for i in s:
+        if s.count(i) == 1:
+            return i
+    return None
