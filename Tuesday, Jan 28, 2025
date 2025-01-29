@@ -10,7 +10,8 @@ def is_palindrome(s):
 Question 2: Find the Intersection of Two Lists
 Write a function list_intersection(list1, list2) that takes two lists of integers as input and returns a new list containing elements that are present in both lists. Ensure there are no duplicates in the output.
 
-
+def list_intersection(list1,list2):
+    return list(set(list1) & set(list2))
 
 Question 3: Sort a Dictionary by Value
 Write a function sort_dict_by_value(d) that takes a dictionary d as input and returns a new dictionary sorted by its values in ascending order. The keys should remain paired with their corresponding values.
