@@ -10,7 +10,10 @@ def find_missing_number(nums, n):
 Problem 2: Check if Two Strings are Anagrams
 Write a function that takes in two strings and checks if they are anagrams (i.e., both strings contain the same characters in the same frequency but in any order).
 
-
+def are_anagrams(str1, str2):
+    sorted_1 = sorted(str1)
+    sorted_2 = sorted(str2)
+    return sorted_1 == sorted_2
 
 Problem 3: First Non-Repeating Character
 Given a string, find the first non-repeating character and return it. If all characters are repeating, return None.
