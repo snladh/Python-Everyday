@@ -1,0 +1,15 @@
+Problem 1: Find the Missing Number in an Array
+Given a list of n-1 integers in the range 1 to n, with no duplicates except for one missing number, write a function to find the missing number.
+
+
+
+
+
+Problem 2: Check if Two Strings are Anagrams
+Write a function that takes in two strings and checks if they are anagrams (i.e., both strings contain the same characters in the same frequency but in any order).
+
+
+
+Problem 3: First Non-Repeating Character
+Given a string, find the first non-repeating character and return it. If all characters are repeating, return None.
+
