@@ -1,8 +1,10 @@
 Problem 1: Find the Missing Number in an Array
 Given a list of n-1 integers in the range 1 to n, with no duplicates except for one missing number, write a function to find the missing number.
 
-
-
+def find_missing_number(nums, n):
+    sum_t = n*(n+1)/2
+    sum_m = sum(nums)
+    return sum_t - sum_m
 
 
 Problem 2: Check if Two Strings are Anagrams
