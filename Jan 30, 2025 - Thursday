@@ -18,3 +18,9 @@ def first_missing_positive(nums):
 Problem 3: Find Top K Frequent Elements
 Given a list of numbers, return the K most frequent elements in descending order of frequency.
 
+def top_k_frequent(nums, k):
+    from collections import Counter
+    dict1 = Counter(nums)
+    sorted_dict = dict(sorted(dict1.items(), key=lambda item:item[1], reverse=True))
+    top_k = list(sorted_dict.items())[:k]
+    return list(map(lambda item: item[0], top_k))
