@@ -21,3 +21,4 @@ def first_unique_char(s):
         
     return -1
 
+
