@@ -9,3 +9,8 @@ def majority_element_ii(nums):
         if num not in maj_nums:
             if nums.count(num) > len(nums) / 3: maj_nums.append(num)
     return maj_nums
+
+
+Problem 2: Find the First Unique Character in a String
+Given a string, find the first non-repeating character and return its index. If no unique character exists, return -1.
+
