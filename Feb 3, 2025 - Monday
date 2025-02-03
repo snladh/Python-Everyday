@@ -22,3 +22,5 @@ def first_unique_char(s):
     return -1
 
 
+Problem 3: Design a Rate Limiter
+Implement a rate limiter where a function can only be called once per X seconds. If it’s called too soon, return False. Otherwise, return True and allow execution.
