@@ -14,3 +14,10 @@ def majority_element_ii(nums):
 Problem 2: Find the First Unique Character in a String
 Given a string, find the first non-repeating character and return its index. If no unique character exists, return -1.
 
+def first_unique_char(s):
+    for i in s:
+        if s.count(i) == 1:
+            return s.index(i)
+        
+    return -1
+
