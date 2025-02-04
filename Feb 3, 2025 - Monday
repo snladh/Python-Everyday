@@ -24,3 +24,17 @@ def first_unique_char(s):
 
 Problem 3: Design a Rate Limiter
 Implement a rate limiter where a function can only be called once per X seconds. If it’s called too soon, return False. Otherwise, return True and allow execution.
+
+import time
+
+last_request_time = 0
+
+def allow_request(interval):
+    global last_request_time
+    current_time = time.time()
+
+    if current_time - last_request_time >= interval:
+        last_request_time = current_time
+        return True
+    
+    return False
