@@ -6,3 +6,6 @@ def reverse_string(s):
     return s1
 
 2. 
+
+def max_num(list1):
+    return max(list1)
