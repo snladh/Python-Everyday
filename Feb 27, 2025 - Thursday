@@ -18,3 +18,10 @@ Write a function that checks if a given word is a palindrome (reads the same for
 
 4. Sum of All Elements in a List
 Write a function that calculates the sum of all numbers in a list.
+
+
+
+5. Count the Number of Vowels in a String
+Write a function that counts the number of vowels (a, e, i, o, u) in a given string.
+
+
