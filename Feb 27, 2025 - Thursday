@@ -5,7 +5,8 @@ def reverse_string(s):
     s1 = s[::-1]
     return s1
 
-2. 
+2. Find the Maximum Number in a List
+Write a function that returns the largest number in a given list.
 
 def max_num(list1):
     return max(list1)
