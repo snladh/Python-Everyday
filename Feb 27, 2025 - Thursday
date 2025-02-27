@@ -14,7 +14,12 @@ def max_num(list1):
 3. Check if a Word is a Palindrome
 Write a function that checks if a given word is a palindrome (reads the same forward and backward).
 
-
+def is_palindrome(word):
+    word1 = word.replace(" ","").lower()
+    if word1 == word1[::-1]:
+        return True
+    else:
+        return False
 
 4. Sum of All Elements in a List
 Write a function that calculates the sum of all numbers in a list.
