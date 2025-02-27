@@ -29,4 +29,10 @@ Write a function that calculates the sum of all numbers in a list.
 5. Count the Number of Vowels in a String
 Write a function that counts the number of vowels (a, e, i, o, u) in a given string.
 
-
+def vowel_counter(string):
+    vowels = {"a","e","i","o","u"}
+    count = 0
+    for a in string.lower():
+        if a in vowels:
+            count += 1
+    return count
