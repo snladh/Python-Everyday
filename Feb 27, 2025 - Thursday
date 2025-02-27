@@ -10,3 +10,9 @@ Write a function that returns the largest number in a given list.
 
 def max_num(list1):
     return max(list1)
+
+3. Check if a Word is a Palindrome
+Write a function that checks if a given word is a palindrome (reads the same forward and backward).
+
+
+
